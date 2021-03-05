@@ -1,0 +1,9 @@
+--- #installing VIM Editor
+- hosts: gang
+  tasks: 
+        - name: update Repo
+          command: apt update
+
+        - name: Installing VIM
+          apt : name=vim state=present
+

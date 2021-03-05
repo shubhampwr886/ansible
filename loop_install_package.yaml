@@ -1,0 +1,18 @@
+--- #Install package using loop
+- hosts: gang
+  user: root
+  tasks:
+    - name: install package VIM , HTOP , MAKE, 
+      apt: name="{{ item }}" state=absent
+      with_items:
+        - vim
+        - htop
+        - make
+      notify: touch
+
+  handlers:
+    - name: touch
+      command: rm /tmp/abc.ttxt
+      become: yes
+    
+

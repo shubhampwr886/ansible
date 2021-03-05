@@ -1,0 +1,19 @@
+--- #installing apache2 in linux by using handlers 
+- hosts: gang
+  tasks:
+    - name: Update repository
+      command: apt update
+     
+
+    - name: install nginx
+      apt: name=nginx state=present      
+      notify: restart nginx
+        
+    - name: index.html
+      copy:
+        content: "Hello, there \n"
+        dest: /var/www/html/index.html
+
+  handlers:
+      - name: restart nginx
+        service: name=nginx state=restarted

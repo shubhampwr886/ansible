@@ -1,0 +1,36 @@
+--- #Install package using loop
+- hosts: gang
+  user: root
+  connection: ssh
+  tasks:
+    - name: install package 
+      apt: 
+        name: vim 
+        state: present
+      when: ansible_os_family == "ubuntu"
+
+    # - name: install package  MAKE, 
+    #   apt: name=make state=present
+    #   when: ansible.os.family = "ubuntu"
+  
+    # - name: install package  HTOP 
+    #   apt: name=htop state=present
+    #   when: ansible.os.family = "RedHat"
+     
+    # - name: touch
+    #   command: ubuntu.txt
+    #   when: ansible.os.family = "ubuntu"
+    #   become: yes
+
+    # - name: touch
+    #   command: redhat.txt
+    #   when: ansible.os.family = "redhat"
+    #   become: yes
+
+    # - name: touch
+    #   command: dabian.txt
+    #   when: ansible.os.family = "dabian"
+    #   become: yes
+    
+    
+

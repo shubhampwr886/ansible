@@ -1,0 +1,9 @@
+--- #updating all machine
+- hosts: gang
+  tasks:
+   - name: updating repo
+     action: apt state=latest 
+
+   - name: copt file
+     copy: src=abc.txt dest=/tmp
+     

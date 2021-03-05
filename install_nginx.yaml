@@ -1,0 +1,25 @@
+--- #Install nginx with Handler
+- hosts: gang
+  user: root
+  tasks:
+          # - name: Update Repo
+          #   command: apt update -y
+          #   become: yes
+
+          - name : remove apache2
+            apt: name=apache2 state=absent
+
+          - name : remove httpd
+            apt: name=httpd state=absent
+
+          - name: install nginx
+            apt: name=nginx state=present
+            become: yes
+
+          - name: Configure webpage
+            copy: src=index.html dest=/var/www/html/
+           
+          # - name: Service start nginx
+          #   service: name=nginx state=stopped
+          #   become: yes
+     

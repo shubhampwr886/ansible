@@ -1,0 +1,9 @@
+--- #Adding user in linux
+- hosts: gang
+  tasks:
+   - name: adding user 
+     ansible.builtin.user:
+       name: sp
+       shell: /bin/bash
+       group: sudoers
+       password: okWELymKcSx5A     

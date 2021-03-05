@@ -1,0 +1,13 @@
+--- #copy files servers to hosts
+- hosts: gang
+  tasks: 
+    - name: Copy abc.txt into hosts
+      copy: src={{item.src}} dest={{item.dest}}
+      with_items:
+        - { src: 'abc1.txt', dest: '/tmp' }
+        - { src: 'abc1.txt', dest: '/tmp' }
+
+    
+
+
+
