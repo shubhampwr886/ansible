@@ -1,5 +1,5 @@
-## About Ansible 
-  	- Configuration Management Tool Works on **SSH**.
+## **Summury** 
+  	- Configuration Management Tool Works on **SSH**
 	- Agentless
 	- Use Playbook for automation task 
 	- Use Yaml files 
