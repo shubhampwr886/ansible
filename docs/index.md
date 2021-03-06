@@ -55,35 +55,40 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 	ansible gang -ba "apt update -y"
 
 
-########################################################
-Modules: -m
-########################################################
 
-install   = present
-uninstall = absent
-update    = latest
-idempotency preset -- means if work does not repeat 
+## Modules: -m
+
+**basic**
+
+	install   = present
+	uninstall = absent
+	update    = latest
+	idempotency preset -- means if work does not repeat 
 
 #install package
-ansible gang -b(use for sudo) -m apt -a "pkg=httpd state=present"
-ansible gang -b -m yum -a "pkg=httpd state=absent"
-ansible gang -b -m yum -a "pkg=httpd state=latest"
+
+	ansible gang -b(use for sudo) -m apt -a "pkg=httpd state=present"
+	ansible gang -b -m yum -a "pkg=httpd state=absent"
+	ansible gang -b -m yum -a "pkg=httpd state=latest"
 
 #start service
-ansible gang -b -m service -a "name=httpd state=started enabled=yes"
-ansible gang -b -m service -a "name=httpd state=stoped"
-ansible gang -b -m service -a "name=httpd state=restarted"
-ansible gang -b -m service -a "name=httpd state=reloaded"
+
+	ansible gang -b -m service -a "name=httpd state=started enabled=yes"
+	ansible gang -b -m service -a "name=httpd state=stoped"
+	ansible gang -b -m service -a "name=httpd state=restarted"
+	ansible gang -b -m service -a "name=httpd state=reloaded"
 
 #copy file
-ansible gang -b -m copy -a "src=file1.txt dest=/tmp"
 
-#copy file on last node in gang group
-ansible gang[-1] -b -m copy -a "src=file1.txt dest=/tmp"
+	ansible gang -b -m copy -a "src=file1.txt dest=/tmp"
+	
+	#copy file on last node in gang group
+	ansible gang[-1] -b -m copy -a "src=file1.txt dest=/tmp"
 
 #setup module
-ansible gang -m setup
-ansible gang -m setup -a "filter=*ipv4*"
+
+	ansible gang -m setup
+	ansible gang -m setup -a "filter=*ipv4*"
 
 ################################################################
 playbooks
