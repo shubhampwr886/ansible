@@ -1,3 +1,4 @@
+
 ### **Introduction** 
 
   	- Configuration Management Tool Works on **SSH**
@@ -193,8 +194,8 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 ## Conditional
 
 **IMP:** 
-**	- always use underscore while writing conditional scripts like "when: ansible_os_family == "RedHat""
-**
+
+- always use **underscore** while writing conditional scripts like "when: ansible_os_family == "RedHat""
 
 
 	--- #install apache on linux machin not on redhat machine
