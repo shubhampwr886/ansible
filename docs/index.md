@@ -28,7 +28,7 @@
 **3:playbooks**
 	- if we need to write two or more modules in one file - playbook comes in
 
-**Setup inventory**
+## **Setup inventory**
 
 By Deafult inventory file is : **/etc/ansible/hosts**
 
