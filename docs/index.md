@@ -4,7 +4,7 @@
 	- Use Playbook for automation task 
 	- Use Yaml files 
 	- Ansible gives Kerberos 
-**## Installation by apt:**
+## **Installation by apt**
 	- sudo apt-get update 
 	- sudo apt-get install software-properties-common 
 	- sudo apt-add-repository ppa:ansible/ansible $ sudo apt-get update 
@@ -26,7 +26,6 @@
 
 **3: playbooks:**
 	- if we need to write two or more modules in one file - playbook comes in
-	- 
 
 
 
