@@ -46,10 +46,17 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 
 **Ad-hoc Commands**
 
-	ansible all -a "touch abc.txt"   	  #Create abc.txt file on all avaliable nodes as per inventory
-	ansible gang -a "touch abc.txt"   	  #Create abc.txt file on 'gang' group which has 3 nodes
- 	ansible gang -a "sudo apt install nginx"  # Install nginx on gang group with sudo previledge
-	ansible gang[0:4] -ba "apt install nginx" #Range for first five nodes in "Gang: group"
+	#Create abc.txt file on all avaliable nodes as per inventory
+	ansible all -a "touch abc.txt" 
+	
+	#Create abc.txt file on 'gang' group which has 3 nodes
+	ansible gang -a "touch abc.txt"   	 
+	
+	#Install nginx on gang group with sudo previledge
+ 	ansible gang -a "sudo apt install nginx"  
+	
+	#Range for first five nodes in "Gang: group"
+	ansible gang[0:4] -ba "apt install nginx" 
 
 	#**use sudo or -b :: same working :: either use sudo or use -b option** 
 	ansible gang -a "sudo apt update -y"
@@ -249,41 +256,4 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 	password:
 
 
-
-### Welcome to GitHub Pages of shubham
-## Welcome to GitHub Pages of shubham
-# Welcome to GitHub Pages of shubham
-
-`Welcome to GitHub Pages of shubham`
-
-_Welcome to GitHub Pages of shubham_
-
-
-[Link]www.youtube.com
-
-
-You can use the [editor on GitHub](https://github.com/shubhampwr886/ansible/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shubhampwr886/ansible/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Thank You 
