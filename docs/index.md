@@ -4,6 +4,7 @@
 	- Use Playbook for automation task 
 	- Use Yaml files 
 	- Ansible gives Kerberos 
+	
 ## **Installation by apt**
 	- sudo apt-get update 
 	- sudo apt-get install software-properties-common 
@@ -13,18 +14,18 @@
 
 ## Working With Ansible
   
- 1: **ad-hoc commands:**
+  **1:ad-hoc commands:**
 	- simple task
 	- fast task
 	- temprary use
 	- over ride every command
 
-2: **module:**
+**2:module:**
 	- can executes directly on hosts
 	- no database , deamons, servers requires.
 	- modules comes with ansible package on server node.
 
-3: **playbooks:**
+**3:playbooks:**
 	- if we need to write two or more modules in one file - playbook comes in
 
 
