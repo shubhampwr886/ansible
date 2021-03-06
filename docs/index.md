@@ -137,7 +137,7 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 	   pkg : httpd
 	  tasks:
 	   - name: install httpd on linux
-	     action: yum name="{{pkg}}" state=installed
+	     action: yum name="{{ pkg }}" state=installed
 
      
 
