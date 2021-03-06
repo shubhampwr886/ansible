@@ -16,10 +16,9 @@
   
  **1:ad-hoc commands**
  
-	- simple task
-	- fast task
-	- temprary use
-	- over ride every command
+	- Use for and Quick simple tasks
+	- Use for temprary use
+	- Always override every command
 
 **2:module**
 
