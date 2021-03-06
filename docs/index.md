@@ -1,4 +1,4 @@
-## **Summury** 
+## **Summary** 
   	- Configuration Management Tool Works on **SSH**
 	- Agentless
 	- Use Playbook for automation task 
