@@ -11,17 +11,18 @@
 	
 ### **Installation by apt**
 
-	- sudo apt-get update 
-	- sudo apt-get install software-properties-common 
-	- sudo apt-add-repository ppa:ansible/ansible $ sudo apt-get update 
-	- sudo apt-get install ansible
+	- sudo apt-get update -y
+	- sudo apt-get install -y software-properties-common 
+	- sudo apt-add-repository ppa:ansible/ansible 
+	- sudo apt-get update -y
+	- sudo apt-get install ansible -y
 
 
 ### Working With Ansible
   
  **1:ad-hoc commands**
  
-	- Use for and Quick simple tasks
+	- Use for  Quick and simple tasks
 	- Use for temprary use
 	- Always override every command
 
