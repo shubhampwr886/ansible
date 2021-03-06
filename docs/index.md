@@ -216,9 +216,10 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
   
 
 ## VAULT
-
 - encrypt and decrypt playbooks
 - for security 
+
+**Examples**
 
 	#encrypt already created file
 	-$] ansible-vault encrypt install_apache2.yaml
