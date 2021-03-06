@@ -145,10 +145,10 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 	  tasks:
 	   - name: install httpd on linux
 	     action: yum name="{{pkg}}" state=installed
-	     **notify**: **handler_one** 		# any msg
+	     notify: handler_one		# any msg
 
-	  **handler**:
-	   - name: **handler_one**
+	  handler:
+	   - name: handler_one
 	     action: service name:"{{pkg}}" state=restarted
 
 
@@ -157,7 +157,8 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 
 
 
-## LOOPS: item -- with_items
+## LOOPS: 
+**item -- with_items**
 
 	---
 	- hosts: gang
@@ -247,7 +248,17 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 
 
 
+### Welcome to GitHub Pages of shubham
 ## Welcome to GitHub Pages of shubham
+# Welcome to GitHub Pages of shubham
+
+`Welcome to GitHub Pages of shubham`
+
+_Welcome to GitHub Pages of shubham_
+
+
+[Link]www.youtube.com
+
 
 You can use the [editor on GitHub](https://github.com/shubhampwr886/ansible/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -258,23 +269,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
 
-ansible -m ping gang
-ansible -m copy src=test dest=/tmp gang
-
-# Header 1
-Ansible test
-## Header 2
-Ansible test
-### Header 3
-Ansible test
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
 
 **Bold** and _Italic_ and `Code` text
 
