@@ -153,12 +153,12 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 	   pkg : httpd
 	  tasks:
 	   - name: install httpd on linux
-	     action: yum name="{{pkg}}" state=installed
+	     action: yum name="{{ variable key-name here ie.pkg }}" state=installed
 	     notify: handler_one		# any msg
 
 	  handler:
 	   - name: handler_one
-	     action: service name:"{{pkg}}" state=restarted
+	     action: service name:"{{ variable key-name here ie.pkg }}" state=restarted
 
 
 
@@ -177,7 +177,7 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 	   pkg : httpd
 	  tasks:
 	   - name: add users in linux
-	     user: name="{{item}}" state=present
+	     user: name="{{Item here}}" state=present
 	     with_items:
 	      - shubham
 	      - kunal
