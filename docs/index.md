@@ -34,24 +34,22 @@ By Deafult inventory file is : **/etc/ansible/hosts**
 
 Edit file and add your hosts or group
 
-	[gang] #Hosts Group Name
-	10.0.3.44 #Host1
-	10.0.3.45 #Host2
-	10.0.3.46 #Host3
+	[gang] 		#Hosts Group Name
+	10.0.3.44 	#Host1
+	10.0.3.45 	#Host2
+	10.0.3.46 	#Host3
 
 Install **Openssh-server** and traffic on 22 port on all Hosts.
 
 
 **Ad-hoc Commands**
 
-	ansible all -a "touch abc.txt"    #-- all nodes
-	ansible gang -a "touch abc.txt"   #-- servers in gang group
-	ansible gang -a "sudo apt install nginx"
+	ansible all -a "touch abc.txt"   	  #Create abc.txt file on all avaliable nodes as per inventory
+	ansible gang -a "touch abc.txt"   	  #Create abc.txt file on 'gang' group which has 3 nodes
+ 	ansible gang -a "sudo apt install nginx"  # Install nginx on gang group with sudo previledge
+	ansible gang[0:4] -ba "apt install nginx" #Range for first five nodes in "Gang: group"
 
-	#Range for first five nodes in "Gang: group"
-	ansible gang[0:4] -ba "apt install nginx "
-
-	#for use sudo or -b :: same working :: either use sudo or use -b option 
+	#**use sudo or -b :: same working :: either use sudo or use -b option** 
 	ansible gang -a "sudo apt update -y"
 	#or
 	ansible gang -ba "apt update -y"
