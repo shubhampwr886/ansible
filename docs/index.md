@@ -1,20 +1,20 @@
-## **Introduction** 
+### **Introduction** 
   	- Configuration Management Tool Works on **SSH**
 	- Agentless
 	- Use Playbook for automation task 
 	- Use Yaml files 
 	- Ansible gives Kerberos 
 	
-## **Installation by apt**
+### **Installation by apt**
 	- sudo apt-get update 
 	- sudo apt-get install software-properties-common 
 	- sudo apt-add-repository ppa:ansible/ansible $ sudo apt-get update 
 	- sudo apt-get install ansible
 
 
-## Working With Ansible
+### Working With Ansible
   
-  **1:ad-hoc commands**
+ **1:ad-hoc commands**
 	- simple task
 	- fast task
 	- temprary use
