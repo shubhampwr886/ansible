@@ -53,7 +53,7 @@ Install **Openssh-server** and traffic on 22 port on all Hosts.
 	ansible gang -a "touch abc.txt"   	 
 	
 	#Install nginx on gang group with sudo previledge
- 	ansible gang -a "sudo apt install nginx"  
+	ansible gang -a "sudo apt install nginx"  
 	
 	#Range for first five nodes in "Gang: group"
 	ansible gang[0:4] -ba "apt install nginx" 
