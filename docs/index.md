@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Pages of shubham
 
 You can use the [editor on GitHub](https://github.com/shubhampwr886/ansible/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -11,9 +11,15 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
+ansible -m ping gang
+ansible -m copy src=test dest=/tmp gang
+
 # Header 1
+Ansible test
 ## Header 2
+Ansible test
 ### Header 3
+Ansible test
 
 - Bulleted
 - List
