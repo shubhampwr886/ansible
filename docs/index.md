@@ -1,11 +1,15 @@
 ### **Introduction** 
+
   	- Configuration Management Tool Works on **SSH**
 	- Agentless
 	- Use Playbook for automation task 
 	- Use Yaml files 
 	- Ansible gives Kerberos 
+	- Parrallel execution
+	- Automatic reporting
 	
 ### **Installation by apt**
+
 	- sudo apt-get update 
 	- sudo apt-get install software-properties-common 
 	- sudo apt-add-repository ppa:ansible/ansible $ sudo apt-get update 
@@ -20,13 +24,13 @@
 	- Use for temprary use
 	- Always override every command
 
-**2:module**
+**2:Module**
 
 	- can executes directly on hosts
 	- no database , deamons, servers requires.
 	- modules comes with ansible package on server node.
 
-**3:playbooks**
+**3:Playbooks**
 
 	- if we need to write two or more modules in one file - playbook comes in
 
