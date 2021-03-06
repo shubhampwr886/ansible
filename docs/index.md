@@ -1,3 +1,41 @@
+##About Ansible 
+  Configuration Management Tool Works on **SSH** 
+  Agentless   
+  Use Playbook for automation task 
+  Use Yaml files 
+  Ansible gives Kerberos 
+  
+## Working With Ansible
+  
+ **1: ad-hoc commands:**
+	- simple task
+	- fast task
+	- temprary use
+	- over ride every command
+
+**2: module : **
+	- can executes directly on hosts
+	- no database , deamons, servers requires.
+	- modules comes with ansible package on server node.
+
+**3: playbooks:**
+	- if we write two or more modules in one file - playbook comes in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Welcome to GitHub Pages of shubham
 
 You can use the [editor on GitHub](https://github.com/shubhampwr886/ansible/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
