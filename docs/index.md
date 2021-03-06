@@ -1,10 +1,10 @@
-##About Ansible 
-  Configuration Management Tool Works on **SSH** 
-  Agentless   
-  Use Playbook for automation task 
-  Use Yaml files 
-  Ansible gives Kerberos 
-  
+## About Ansible 
+  	- Configuration Management Tool Works on **SSH**.
+	- Agentless
+	- Use Playbook for automation task 
+	- Use Yaml files 
+	- Ansible gives Kerberos 
+
 ## Working With Ansible
   
  **1: ad-hoc commands:**
